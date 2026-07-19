@@ -1,0 +1,24 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.tmp
+*.log
+.vscode/
+.idea/
+
+# Debug / work files (not for production)
+debug-*.png
+preview.png
+план.txt
+tmp-*
+images/animated-hero-preview.*
+images/fon-mask-debug.png
+images/fon-source.png
+images/fon-from-preview.jpg
+images/clean-fallback.jpg
+images/mountain-clean.jpg
+images/villa-clean.jpg
+
+# Vercel
+.vercel

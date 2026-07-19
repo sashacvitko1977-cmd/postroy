@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="PoStroy — агентство недвижимости. Дома и участки с видом на горы. Подбор, сделки, сопровождение." />
+  <title>PoStroy — Агентство недвижимости</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- Transparent header -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#hero" class="logo" aria-label="PoStroy — на главную">
+        <svg class="logo__svg" width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+          <rect width="40" height="40" rx="11" class="logo__bg"/>
+          <path class="logo__mountains" d="M6 28 L14 16 L19 22 L24 12 L34 28 Z" fill="currentColor" opacity="0.35"/>
+          <path class="logo__mountains" d="M8 28 L15 18 L20 24 L26 14 L32 28 Z" fill="currentColor" opacity="0.55"/>
+          <path class="logo__house" d="M16 28 V21.5 L20 18.5 L24 21.5 V28 H16 Z" fill="currentColor"/>
+          <path class="logo__roof" d="M14.5 22 L20 17.5 L25.5 22" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          <rect x="18.6" y="23.5" width="2.8" height="4.5" rx="0.4" fill="rgba(255,255,255,0.55)"/>
+        </svg>
+        <span class="logo__text">Po<span>Stroy</span></span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Основная навигация">
+        <a href="#hero" class="nav__link">Главная</a>
+        <a href="#services" class="nav__link">Услуги</a>
+        <a href="#process" class="nav__link">Как мы работаем</a>
+        <a href="#about" class="nav__link">О нас</a>
+        <a href="#request" class="nav__link nav__link--cta">Оставить заявку</a>
+      </nav>
+      <a href="tel:+74951234567" class="header__phone">+7 (495) 123-45-67</a>
+      <button type="button" class="burger" id="burger" aria-label="Меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-nav" id="mobileNav" hidden>
+    <a href="#hero">Главная</a>
+    <a href="#services">Услуги</a>
+    <a href="#process">Как мы работаем</a>
+    <a href="#about">О нас</a>
+    <a href="#request" class="mobile-nav__cta">Оставить заявку</a>
+  </div>
+
+  <main>
+    <!-- Hero / Главная -->
+    <section class="hero" id="hero">
+      <div class="hero__bg" style="background-image: url('fon.jpg')" role="img" aria-label="Современный дом в горах"></div>
+      <div class="hero__overlay"></div>
+      <div class="container hero__content">
+        <h1 class="hero__title">Дома, где<br /><em>воздух и горизонт</em></h1>
+        <p class="hero__badge">Агентство недвижимости</p>
+        <p class="hero__sub">
+          Подбираем объекты с характером: у подножия гор, у воды, в тихих районах города.
+          Честное сопровождение сделки от первого звонка до ключей.
+        </p>
+        <div class="hero__actions">
+          <a href="#request" class="btn btn--primary">Оставить заявку</a>
+          <a href="#services" class="btn btn--ghost">Наши услуги</a>
+        </div>
+        <dl class="hero__stats">
+          <div>
+            <dt>12+</dt>
+            <dd>лет на рынке</dd>
+          </div>
+          <div>
+            <dt>840+</dt>
+            <dd>сделок</dd>
+          </div>
+          <div>
+            <dt>96%</dt>
+            <dd>клиентов рекомендуют</dd>
+          </div>
+        </dl>
+      </div>
+      <a href="#services" class="hero__scroll" aria-label="К услугам">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- Услуги -->
+    <section class="section section--mist" id="services">
+      <div class="container">
+        <header class="section__head">
+          <span class="section__label">Услуги</span>
+          <h2 class="section__title">Что мы делаем</h2>
+          <p class="section__desc">Полный цикл работы с недвижимостью — без лишних посредников и сюрпризов.</p>
+        </header>
+        <div class="cards">
+          <article class="card card--photo">
+            <div class="card__media">
+              <img src="images/service-buy.jpg" alt="Современный дом — покупка и продажа" loading="lazy" width="600" height="400" />
+            </div>
+            <div class="card__body">
+              <h3>Покупка и продажа</h3>
+              <p>Квартиры, дома, таунхаусы и участки. Оценка, маркетинг, торг и безопасное закрытие сделки.</p>
+            </div>
+          </article>
+          <article class="card card--photo">
+            <div class="card__media">
+              <img src="images/service-search.jpg" alt="Ключи от новой недвижимости" loading="lazy" width="600" height="400" />
+            </div>
+            <div class="card__body">
+              <h3>Подбор объекта</h3>
+              <p>Ищем по вашим критериям: вид, локация, бюджет, инфраструктура. Показы в удобное время.</p>
+            </div>
+          </article>
+          <article class="card card--photo">
+            <div class="card__media">
+              <img src="images/service-legal.jpg" alt="Юридические документы по сделке" loading="lazy" width="600" height="400" />
+            </div>
+            <div class="card__body">
+              <h3>Юридическое сопровождение</h3>
+              <p>Проверка чистоты объекта, договор, регистрация. Работаем с ипотекой и материнским капиталом.</p>
+            </div>
+          </article>
+          <article class="card card--photo">
+            <div class="card__media">
+              <img src="images/service-country.jpg" alt="Загородный дом у природы" loading="lazy" width="600" height="400" />
+            </div>
+            <div class="card__body">
+              <h3>Загородная недвижимость</h3>
+              <p>Специализация на домах у гор и природы: участки, коттеджи, видовые локации.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Как мы работаем -->
+    <section class="section" id="process">
+      <div class="container">
+        <header class="section__head">
+          <span class="section__label">Процесс</span>
+          <h2 class="section__title">Как мы работаем</h2>
+          <p class="section__desc">Прозрачные шаги — вы всегда понимаете, что происходит с вашей сделкой.</p>
+        </header>
+        <ol class="steps">
+          <li class="step">
+            <div class="step__marker" aria-hidden="true">
+              <span class="step__dot"></span>
+              <span class="step__line"></span>
+            </div>
+            <div class="step__content">
+              <h3>Заявка</h3>
+              <p>Расскажите о задаче: купить, продать или подобрать. Перезвоним в тот же день.</p>
+            </div>
+          </li>
+          <li class="step">
+            <div class="step__marker" aria-hidden="true">
+              <span class="step__dot"></span>
+              <span class="step__line"></span>
+            </div>
+            <div class="step__content">
+              <h3>Встреча и бриф</h3>
+              <p>Уточняем бюджет, локацию, сроки. Фиксируем критерии в понятном плане.</p>
+            </div>
+          </li>
+          <li class="step">
+            <div class="step__marker" aria-hidden="true">
+              <span class="step__dot"></span>
+              <span class="step__line"></span>
+            </div>
+            <div class="step__content">
+              <h3>Подбор и показы</h3>
+              <p>Готовим подборку, организуем просмотры, даём честную оценку плюсов и минусов.</p>
+            </div>
+          </li>
+          <li class="step">
+            <div class="step__marker" aria-hidden="true">
+              <span class="step__dot"></span>
+            </div>
+            <div class="step__content">
+              <h3>Сделка</h3>
+              <p>Документы, переговоры, регистрация. Вы получаете ключи — мы остаёмся на связи.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Квиз -->
+    <section class="section section--quiz" id="quiz">
+      <div class="container">
+        <header class="section__head">
+          <span class="section__label">Квиз</span>
+          <h2 class="section__title">Какой объект вам подходит?</h2>
+          <p class="section__desc">4 коротких вопроса — и мы подскажем направление поиска. Без обязательств.</p>
+        </header>
+
+        <div class="quiz" id="quizApp">
+          <div class="quiz__progress" aria-hidden="true">
+            <div class="quiz__progress-bar" id="quizProgress"></div>
+          </div>
+          <p class="quiz__step-label" id="quizStepLabel">Вопрос 1 из 4</p>
+
+          <div class="quiz__panel" id="quizPanel">
+            <!-- filled by JS -->
+          </div>
+
+          <div class="quiz__nav" id="quizNav">
+            <button type="button" class="btn btn--quiz-ghost" id="quizBack" hidden>Назад</button>
+            <button type="button" class="btn btn--primary" id="quizNext" disabled>Далее</button>
+          </div>
+
+          <div class="quiz__result" id="quizResult" hidden>
+            <div class="quiz__result-card">
+              <span class="quiz__result-badge">Ваш профиль</span>
+              <h3 id="quizResultTitle"></h3>
+              <p id="quizResultText"></p>
+              <ul class="quiz__result-tags" id="quizResultTags"></ul>
+              <div class="quiz__result-actions">
+                <a href="#request" class="btn btn--primary" id="quizToForm">Получить подборку</a>
+                <button type="button" class="btn btn--quiz-ghost" id="quizRestart">Пройти ещё раз</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- О нас -->
+    <section class="section section--sky" id="about">
+      <div class="container about">
+        <div class="about__text">
+          <header class="section__head section__head--left">
+            <span class="section__label">О нас</span>
+            <h2 class="section__title">Команда, которая<br />любит горизонт</h2>
+          </header>
+          <p>
+            PoStroy — агентство недвижимости с фокусом на объекты, где хочется жить:
+            свет, воздух, природа, продуманные планировки. Работаем в городе и загородом,
+            помогаем частным клиентам и инвесторам.
+          </p>
+          <p>
+            Мы не давим на сделку. Наша задача — чтобы вы приняли спокойное, осознанное решение.
+            Поэтому в переговорах мы на стороне клиента, а не «закрытия плана».
+          </p>
+          <ul class="about__list">
+            <li>Личный брокер на весь путь</li>
+            <li>Проверенная база объектов</li>
+            <li>Сопровождение до регистрации</li>
+            <li>Конфиденциальность сделок</li>
+          </ul>
+        </div>
+        <div class="about__panel">
+          <blockquote>
+            «Хороший дом — это не только метры. Это свет утром, тишина вечером и вид, к которому хочется возвращаться.»
+          </blockquote>
+          <cite>— команда PoStroy</cite>
+        </div>
+      </div>
+    </section>
+
+    <!-- Оставить заявку -->
+    <section class="section section--request" id="request">
+      <div class="container request">
+        <header class="section__head">
+          <span class="section__label">Контакты</span>
+          <h2 class="section__title">Оставить заявку</h2>
+          <p class="section__desc">Опишите задачу — перезвоним и предложим следующий шаг. Без спама и навязчивых звонков.</p>
+        </header>
+        <div class="request__grid">
+          <form class="form" id="requestForm" novalidate>
+            <div class="form__row">
+              <label class="field">
+                <span>Имя <em>*</em></span>
+                <input type="text" name="name" id="name" placeholder="Как к вам обращаться" required autocomplete="name" />
+                <small class="field__error" data-error="name"></small>
+              </label>
+              <label class="field">
+                <span>Телефон <em>*</em></span>
+                <input type="tel" name="phone" id="phone" placeholder="+7 (___) ___-__-__" required autocomplete="tel" />
+                <small class="field__error" data-error="phone"></small>
+              </label>
+            </div>
+            <label class="field">
+              <span>Интересует</span>
+              <select name="interest" id="interest">
+                <option value="buy">Купить</option>
+                <option value="sell">Продать</option>
+                <option value="select">Подобрать объект</option>
+                <option value="consult">Консультация</option>
+              </select>
+            </label>
+            <label class="field">
+              <span>Сообщение</span>
+              <textarea name="message" id="message" rows="4" placeholder="Бюджет, район, тип объекта…"></textarea>
+            </label>
+            <label class="check">
+              <input type="checkbox" name="agree" id="agree" required />
+              <span>Согласен на обработку персональных данных</span>
+            </label>
+            <small class="field__error" data-error="agree"></small>
+            <button type="submit" class="btn btn--primary btn--block" id="submitBtn">Отправить заявку</button>
+            <p class="form__hint">Обычно отвечаем в течение рабочего дня.</p>
+          </form>
+          <aside class="request__info">
+            <h3>Связаться напрямую</h3>
+            <a href="tel:+74951234567" class="request__link">+7 (495) 123-45-67</a>
+            <a href="mailto:hello@postroy.ru" class="request__link">hello@postroy.ru</a>
+            <p class="request__meta">Пн–Пт 10:00–19:00<br />Сб 11:00–16:00</p>
+            <p class="request__meta">Москва · выезды по области</p>
+          </aside>
+        </div>
+        <div class="form-success" id="formSuccess" hidden>
+          <h3>Заявка отправлена</h3>
+          <p>Спасибо! Мы свяжемся с вами в ближайшее рабочее время.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#hero" class="logo logo--footer" aria-label="PoStroy">
+        <svg class="logo__svg" width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+          <rect width="40" height="40" rx="11" class="logo__bg"/>
+          <path class="logo__mountains" d="M6 28 L14 16 L19 22 L24 12 L34 28 Z" fill="currentColor" opacity="0.35"/>
+          <path class="logo__mountains" d="M8 28 L15 18 L20 24 L26 14 L32 28 Z" fill="currentColor" opacity="0.55"/>
+          <path class="logo__house" d="M16 28 V21.5 L20 18.5 L24 21.5 V28 H16 Z" fill="currentColor"/>
+          <path class="logo__roof" d="M14.5 22 L20 17.5 L25.5 22" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          <rect x="18.6" y="23.5" width="2.8" height="4.5" rx="0.4" fill="rgba(255,255,255,0.55)"/>
+        </svg>
+        <span class="logo__text">Po<span>Stroy</span></span>
+      </a>
+      <p class="footer__copy">© <span id="year"></span> PoStroy. Агентство недвижимости.</p>
+      <nav class="footer__nav">
+        <a href="#services">Услуги</a>
+        <a href="#process">Процесс</a>
+        <a href="#about">О нас</a>
+        <a href="#request">Заявка</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/hero-fx.js"></script>
+</body>
+</html>
